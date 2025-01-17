@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 12.3 Formularios</title>
+</head>
+<body>
+    <h1>Tarea 12.3 Formularios</h1>
+    <h2>Rellena tu CV</h2>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p> 
+                <label for="name">Provincia</label>
+                <br>
+                <select name="Provincia" id="provincia">
+                    <option value="">- Selecciona -</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Valencia">Valencia</option>
+                </select>
+            </p>
+            <p>
+                <label for="age">Fecha de nacimiento</label>
+                <br>
+                <input type="date" name="Fecha de nacimiento" id="fechaNacimiento">
+            </p>
+            <p>
+                <label for="interes">Temas de interes</label>
+                <br>
+                <select name="Temas de interes" id="interes" multiple>
+                    <option value="Programacion">Programacion</option>
+                    <option value="Web">Web</option>
+                    <option value="Android">Android</option>
+                    <option value="iOS">iOS</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="PHP">PHP</option>
+                    <option value="MySQL">MySQL</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

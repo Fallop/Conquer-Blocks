@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 12.4 Formularios</title>
+</head>
+<body>
+    <h1>Tarea 12.4 Formularios</h1>
+    <h2>Informacion Sobre el producto</h2>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos Basicos</legend>
+            <p> 
+                <label for="name">Nombre</label>
+                <br>
+                <input type="text" name="Nombre" id="name" maxlength="50">
+            </p>
+            <p>
+                <label for="age">Descripción</label>
+                <br>
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </p>
+            <p>
+                <label for="photo">Foto</label>
+                <input type="file" name="photo" id="photo">
+            </p>
+            <p>
+                <input type="checkbox" name="Visitas" id="visits">
+                <label for="visits">Añadir Contador de Visitas</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Economicos</legend>
+            <p>
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" id="precio" min="0" max="1000">
+                euros
+                <label for="taxes">Impuestos</label>
+                <select name="taxes" id="taxes">
+                    <option value="4">4%</option>
+                    <option value="7">7%</option>
+                    <option value="16">16%</option>
+                    <option value="25">25%</option>
+                </select>
+            </p>
+            <p>
+                <label for="cuppon">Promocion</label>
+                <br>
+                <input type="radio" name="cuppon" id="noCuppon" value="1">
+                <label for="noCuppon">Ninguno</label>
+                <br>
+                <input type="radio" name="cuppon" id="sendCuppon" value="2">
+                <label for="sendCuppon">Transporte gratuito</label>
+                <br>
+                <input type="radio" name="cuppon" id="discountCuppon" value="3">
+                <label for="discountCuppon">Descuento 5%</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
